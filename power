@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+double power(double a,double b){
+	if(b==0) return 1;
+	if((int)b%2==0) return pow(a,b/2)*pow(a,b/2);
+	if((int)b%2==1) return a*pow(a,b/2)*pow(a,b/2);
+}
+int main(){
+	double a,b;
+	cin>>a>>b;
+		cout<<power(a,b);	
+}
